@@ -3,7 +3,7 @@ defmodule HedwigSimpleResponders.Mixfile do
 
   def project do
     [app: :hedwig_simple_responders,
-     version: "0.1.2",
+     version: "0.1.3",
      elixir: "~> 1.3",
      elixirc_paths: elixirc_paths(Mix.env),
      build_embedded: Mix.env == :prod,
@@ -31,8 +31,8 @@ defmodule HedwigSimpleResponders.Mixfile do
     [
       {:hedwig, "~> 1.0"},
       {:flip_text, "~> 0.1"},
-      {:poison, "~> 3.0"},
-      {:httpoison, "~> 1.0"},
+      {:poison, "~> 3.1"},
+      {:httpoison, "~> 0.11.0"},
       {:ex_doc, ">= 0.0.0", only: :dev},
       {:junit_formatter, "~> 2.0", only: :test},
       {:credo, "~> 0.5", only: [:dev, :test]},
